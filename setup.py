@@ -10,7 +10,7 @@ def compile_translations():
                                                        import compile_messages
     except ImportError:
         return None
-    curdir = os.getcwdu()
+    curdir = os.getcwd()
     os.chdir(os.path.join(os.path.dirname(__file__), 'invitation'))
     try:
         compile_messages(stderr=sys.stderr)
